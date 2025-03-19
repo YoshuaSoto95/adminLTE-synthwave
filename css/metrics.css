@@ -1,0 +1,67 @@
+.synth-metric-card {
+    position: relative;
+    background: linear-gradient(135deg, 
+        rgba(122, 4, 235, 0.3), 
+        rgba(255, 56, 172, 0.3)) !important;
+    border: 2px solid var(--synth-neon);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.synth-metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(122, 4, 235, 0.3);
+}
+
+.synth-metric-card .inner {
+    display: inline-block;
+    color: white;
+}
+
+.synth-metric-card h3 {
+    font-size: 2.2rem;
+    margin: 0;
+    text-shadow: 0 0 10px var(--synth-neon);
+    color: white;
+}
+
+.synth-metric-card p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.synth-metric-card .icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: var(--synth-neon);
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.synth-metric-card:hover .icon {
+    opacity: 1;
+    transform: scale(1.2) rotate(10deg);
+}
+
+.sparkline {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 0.9rem;
+    color: var(--synth-neon);
+    font-weight: bold;
+    text-shadow: 0 0 5px currentColor;
+}
+
+/* Colores personalizados */
+.synth-metric-card.bg-primary { border-color: var(--synth-primary); }
+.synth-metric-card.bg-danger { border-color: #ff075b; }
+.synth-metric-card.bg-success { border-color: #0bfabd; }
+.synth-metric-card.bg-warning { border-color: #ffd300; }

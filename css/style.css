@@ -1,0 +1,158 @@
+:root {
+    --synth-primary: #ff38ac;
+    --synth-secondary: #7a04eb;
+    --synth-bg: #1a0933;
+    --synth-neon: #08f7fe;
+    --synth-border: #ff75c3;
+}
+
+body {
+    background: var(--synth-bg);
+    position: relative;
+}
+
+/* Sobreescribimos colores de AdminLTE */
+.main-header {
+    background: linear-gradient(135deg, var(--synth-primary), var(--synth-secondary)) !important;
+    border-bottom: 2px solid var(--synth-neon) !important;
+}
+
+.main-sidebar {
+    background-color: var(--synth-bg) !important;
+    border-right: 2px solid var(--synth-neon);
+}
+
+.nav-sidebar > .nav-item > .nav-link {
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+.nav-sidebar > .nav-item > .nav-link:hover {
+    background: rgba(255, 56, 172, 0.2) !important;
+    transform: translateX(5px);
+    box-shadow: 0 0 15px var(--synth-primary);
+}
+
+.brand-link {
+    border-bottom: 2px solid var(--synth-neon) !important;
+    background: var(--synth-bg) !important;
+}
+
+/* Efecto de neón para el sidebar */
+.main-sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 40px rgba(122, 4, 235, 0.5);
+    pointer-events: none;
+}
+
+/* Tables */
+
+.table-synthwave {
+    --synth-table-border: rgba(255, 56, 172, 0.3);
+    border: 1px solid var(--synth-table-border);
+    background: rgba(26, 9, 51, 0.8);
+}
+
+.table-synthwave thead {
+    background: linear-gradient(90deg, 
+        var(--synth-primary) 0%, 
+        var(--synth-secondary) 100%);
+}
+
+.table-synthwave th {
+    border-bottom: 2px solid var(--synth-neon) !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.table-synthwave tr {
+    transition: all 0.3s ease;
+}
+
+.table-synthwave tr:hover {
+    background: rgba(255, 56, 172, 0.1) !important;
+    transform: translateX(10px);
+    box-shadow: 0 0 25px rgba(122, 4, 235, 0.3);
+}
+
+.status-badge {
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    text-shadow: 0 0 5px currentColor;
+}
+
+.status-badge.active {
+    background: rgba(8, 247, 254, 0.2);
+    color: var(--synth-neon);
+    border: 1px solid var(--synth-neon);
+}
+
+.synth-card {
+    background: rgba(26, 9, 51, 0.7);
+    border: 1px solid var(--synth-neon);
+    box-shadow: 0 0 30px rgba(122, 4, 235, 0.3);
+}
+
+/* Dropdown personalizado */
+.synth-dropdown {
+    background: var(--synth-bg) !important;
+    border: 2px solid var(--synth-neon) !important;
+    box-shadow: 0 0 25px rgba(122, 4, 235, 0.3);
+}
+
+.dropdown-item {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 56, 172, 0.2) !important;
+    transform: translateX(5px);
+    text-shadow: 0 0 10px var(--synth-neon);
+}
+
+/* Modal Estilizado */
+.synth-modal {
+    background: linear-gradient(145deg, #1a0933 0%, #2d0b5a 100%);
+    border: 2px solid var(--synth-neon);
+    box-shadow: 0 0 50px rgba(255, 56, 172, 0.3);
+}
+
+.btn-synth-danger {
+    background: rgba(255, 0, 0, 0.3);
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    transition: all 0.3s ease;
+}
+
+.btn-synth-danger:hover {
+    background: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-synth-secondary {
+    background: rgba(8, 247, 254, 0.1);
+    color: var(--synth-neon);
+    border: 1px solid var(--synth-neon);
+}
+
+/* Charts style */
+
+/* Efecto de brillo en los gráficos */
+.chartjs-render-monitor {
+    filter: drop-shadow(0 0 10px rgba(122, 4, 235, 0.3));
+}
+
+/* Personalización de tooltips */
+.chart-tooltip {
+    background: var(--synth-bg) !important;
+    border: 1px solid var(--synth-neon) !important;
+    box-shadow: 0 0 15px rgba(122, 4, 235, 0.5) !important;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthwave Admin</title>
+    
+    <!-- AdminLTE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Css -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color: var(--synth-neon);"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link" style="color: white;">Dashboard</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#">
+                        <i class="fas fa-expand-arrows-alt" style="color: var(--synth-neon);"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-link">
+                <span class="brand-text font-weight-light" style="color: var(--synth-neon);">SYNTHWAVE ADMIN</span>
+            </a>
+
+            <!-- Sidebar Menu -->
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview">
+                        <!-- Dashboard -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-rocket" style="color: var(--synth-neon);"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+
+                        <!-- Sección Principal -->
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-network-wired" style="color: var(--synth-primary);"></i>
+                                <p>
+                                    Modules
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <!-- ... otros elementos ... -->
+                                <li class="nav-item">
+                                    <a href="tables.html" class="nav-link">
+                                        <i class="fas fa-table nav-icon" style="color: var(--synth-neon);"></i>
+                                        <p>Tables</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-chart-line nav-icon" style="color: var(--synth-neon);"></i>
+                                        <p>Analytics</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-users nav-icon" style="color: var(--synth-neon);"></i>
+                                        <p>Users</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper -->
+        <div class="content-wrapper p-4" style="background: linear-gradient(to bottom right, #16052f, #2c0a5a);">
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Tabla Personalizada -->
+                    <div class="card synth-card">
+                        <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
+                            <h3 class="card-title" style="color: var(--synth-neon);"><i class="fas fa-star mr-2"></i>Top Users</h3>
+                        </div>
+                        <div class="card-body" style="background: var(--synth-bg);">
+                            <table class="table table-synthwave">
+                                <thead>
+                                    <tr>
+                                        <th style="color:#fff;">ID</th>
+                                        <th style="color:#fff;">Username</th>
+                                        <th style="color:#fff;">Status</th>
+                                        <th style="color:#fff;">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="color: var(--synth-neon);">#001</td>
+                                        <td style="color: white;">NeonRider</td>
+                                        <td><span class="status-badge active">Active</span></td>
+                                        <td style="color: var(--synth-neon);">★ 950</td>
+                                    </tr>
+                                    <!-- Más filas... -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+
+</body>
+</html>
