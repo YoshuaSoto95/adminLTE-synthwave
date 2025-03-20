@@ -188,93 +188,29 @@
 
         <!-- Content Wrapper -->
         <div class="content-wrapper" style="background: linear-gradient(to bottom right, #16052f, #2c0a5a);">
-            <!-- Aquí irá el contenido principal -->
-            <div class="content-header">
-                <div class="container-fluid">
+            <section class="content">
+                <div class="container-fluid pt-4">
+                    <!-- Primera Fila -->
                     <div class="row mb-4">
-                        <!-- Card Visitas -->
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="synth-metric-card bg-primary">
-                                <div class="inner">
-                                    <h3>24.8k</h3>
-                                    <p>Visitas</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-eye"></i>
-                                </div>
-                                <div class="sparkline" data-color="var(--synth-neon)">▲ 12%</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card Productos -->
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="synth-metric-card bg-danger">
-                                <div class="inner">
-                                    <h3>154</h3>
-                                    <p>Productos</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-cube"></i>
-                                </div>
-                                <div class="sparkline" data-color="var(--synth-neon)">▼ 3%</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card Clientes -->
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="synth-metric-card bg-success">
-                                <div class="inner">
-                                    <h3>2.3k</h3>
-                                    <p>Clientes</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="sparkline" data-color="var(--synth-neon)">▲ 8%</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card Ventas -->
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="synth-metric-card bg-warning">
-                                <div class="inner">
-                                    <h3>$45.2k</h3>
-                                    <p>Ventas</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                </div>
-                                <div class="sparkline" data-color="var(--synth-neon)">▲ 22%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Gráficos y Charts -->
-            <div class="content p-4">
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- Gráfico Visitas -->
                         <div class="col-md-6">
                             <div class="card synth-card">
-                                <div class="card-header">
-                                    <h3 class="card-title" style="color: var(--synth-neon);">
-                                        <i class="fas fa-chart-line mr-2"></i>Visitas Semanales
-                                    </h3>
+                                <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
+                                    <h5 class="card-title" style="color: var(--synth-neon);">
+                                        <i class="fas fa-chart-line mr-2"></i>Tráfico del Sitio
+                                    </h5>
                                 </div>
                                 <div class="card-body">
-                                    <canvas id="visitsChart" style="height: 300px;"></canvas>
+                                    <canvas id="trafficChart" style="height: 300px;"></canvas>
                                 </div>
                             </div>
                         </div>
-        
-                        <!-- Gráfico Ventas -->
+
                         <div class="col-md-6">
                             <div class="card synth-card">
-                                <div class="card-header">
-                                    <h3 class="card-title" style="color: var(--synth-neon);">
-                                        <i class="fas fa-dollar-sign mr-2"></i>Ventas Mensuales
-                                    </h3>
+                                <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
+                                    <h5 class="card-title" style="color: var(--synth-neon);">
+                                        <i class="fas fa-shopping-cart mr-2"></i>Ventas Mensuales
+                                    </h5>
                                 </div>
                                 <div class="card-body">
                                     <canvas id="salesChart" style="height: 300px;"></canvas>
@@ -282,115 +218,39 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Cards -->
-            <div class="content p-4">
 
-                <div class="row">
-                    <!-- Card 1: Card Informativa con Icono -->
-                    <div class="col-md-6">
-                        <div class="synth-card glow-hover">
-                            <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title mb-0" style="color: var(--synth-neon);">
-                                        <i class="fas fa-server mr-2"></i>Servidores
+                    <!-- Segunda Fila -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card synth-card">
+                                <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
+                                    <h5 class="card-title" style="color: var(--synth-neon);">
+                                        <i class="fas fa-boxes mr-2"></i>Distribución de Productos
                                     </h5>
-                                    <span class="status-badge active">Online</span>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <div class="synth-metric-icon" style="background: linear-gradient(45deg, var(--synth-primary), var(--synth-secondary));">
-                                        <i class="fas fa-microchip"></i>
-                                    </div>
-                                    <h2 style="color: var(--synth-neon); text-shadow: 0 0 15px var(--synth-neon);">85%</h2>
-                                    <p class="mb-0" style="color: white;">Capacidad Utilizada</p>
+                                <div class="card-body">
+                                    <canvas id="productsChart" style="height: 300px;"></canvas>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Card 2: Card de Progreso -->
-                    <div class="col-md-6">
-                        <div class="synth-card glow-hover">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 style="color: var(--synth-primary);">Ventas Diarias</h5>
-                                        <h2 style="color: var(--synth-neon);">$2,450</h2>
-                                    </div>
-                                    <div class="synth-progress-circle">
-                                        <div class="progress-circle" data-progress="75">
-                                            <span style="color: var(--synth-neon);">75%</span>
-                                        </div>
-                                    </div>
+                        <div class="col-md-6">
+                            <div class="card synth-card">
+                                <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
+                                    <h5 class="card-title" style="color: var(--synth-neon);">
+                                        <i class="fas fa-user-check mr-2"></i>Actividad de Usuarios
+                                    </h5>
                                 </div>
-                                <div class="synth-progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%; background: linear-gradient(90deg, var(--synth-primary), var(--synth-secondary));"></div>
+                                <div class="card-body">
+                                    <canvas id="usersChart" style="height: 300px;"></canvas>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="row pt-5">
-                    <!-- Card 3: Card de Estadísticas -->
-                    <div class="col-md-6">
-                        <div class="synth-card glow-hover">
-                            <div class="card-body">
-                                <h5 class="card-title" style="color: var(--synth-neon); border-bottom: 2px solid var(--synth-neon); padding-bottom: 10px;">
-                                    <i class="fas fa-chart-bar mr-2"></i>Tráfico
-                                </h5>
-                                <br>
-                                <div class="synth-stats pt-4">
-                                    <div class="stat-item">
-                                        <span class="label">Visitas</span>
-                                        <span class="value" style="color: var(--synth-primary);">2.8K</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="label">Conversión</span>
-                                        <span class="value" style="color: var(--synth-neon);">34%</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="label">Tiempo</span>
-                                        <span class="value" style="color: var(--synth-secondary);">4.6m</span>
-                                    </div>
-                                </div>
-                                <div class="synth-sparkline" style="height: 80px;">
-                                    <!-- Aquí iría un gráfico sparkline -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Card 4: Card de Usuario -->
-                    <div class="col-md-6">
-                        <div class="synth-card glow-hover">
-                            <div class="card-body text-center">
-                                <div class="synth-avatar">
-                                    <img src="https://via.placeholder.com/100" class="avatar-img" alt="User Avatar" style="border: 2px solid var(--synth-neon);">
-                                    <div class="status-dot active"></div>
-                                </div>
-                                <h3 class="mt-3" style="color: var(--synth-neon);">CyberAdmin</h3>
-                                <p class="text-muted">Administrador Principal</p>
-                                <div class="synth-social-links">
-                                    <a href="#" class="social-link" style="color: var(--synth-primary);">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="#" class="social-link" style="color: var(--synth-neon);">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="social-link" style="color: var(--synth-secondary);">
-                                        <i class="fab fa-discord"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+            </section>
         </div>
+
 
     </div>
 
@@ -424,121 +284,115 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <!-- Scripts -->
     <script>
-        // Inicialización de componentes Bootstrap
-        $(document).ready(function() {
-            // Inicializar dropdowns
-            $('.dropdown-toggle').dropdown();
-            
-            // Inicializar tooltips
-            $('[data-toggle="tooltip"]').tooltip();
-            
-            // Inicializar modales
-            $('#logoutModal').modal({show: false});
-            
-            // Logout confirmado
-            $('#confirmLogout').on('click', function() {
-                // Aquí iría la lógica de logout
-                console.log('Usuario desconectado');
-                $('#logoutModal').modal('hide');
-            });
-        });
-    </script>
-    <script>
-        // Función para generar datos aleatorios
-        function generateRandomData(length, min, max) {
-            return Array.from({length}, () => Math.floor(Math.random() * (max - min + 1)) + min);
-        }
-
-        // Configuración común para gráficos
+        // Configuración común
         const chartOptions = {
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    display: false
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(26, 9, 51, 0.9)',
-                    titleColor: '#08f7fe',
-                    bodyColor: '#ff38ac',
-                    borderColor: '#7a04eb',
-                    borderWidth: 1,
-                    callbacks: {
-                        label: (context) => ` ${context.dataset.label}: ${context.parsed.y}`
+                    labels: {
+                        color: '#ff75c3'
                     }
                 }
             },
             scales: {
                 x: {
-                    grid: {
-                        color: 'rgba(122, 4, 235, 0.2)'
-                    },
-                    ticks: {
-                        color: '#ff75c3'
-                    }
+                    grid: { color: 'rgba(122, 4, 235, 0.2)' },
+                    ticks: { color: '#ff75c3' }
                 },
                 y: {
-                    grid: {
-                        color: 'rgba(122, 4, 235, 0.2)'
-                    },
-                    ticks: {
-                        color: '#ff75c3'
-                    }
+                    grid: { color: 'rgba(122, 4, 235, 0.2)' },
+                    ticks: { color: '#ff75c3' }
                 }
             }
         };
 
-        // Gráfico de Visitas (Línea)
-        const visitsCtx = document.getElementById('visitsChart').getContext('2d');
-        new Chart(visitsCtx, {
+        // Gráfico de Línea (Tráfico)
+        new Chart(document.getElementById('trafficChart'), {
             type: 'line',
             data: {
-                labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4', 'Sem 5', 'Sem 6', 'Sem 7', 'Sem 8', 'Sem 9', 'Sem 10', 'Sem 11', 'Sem 12'],
+                labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
                 datasets: [{
                     label: 'Visitas',
-                    data: generateRandomData(12, 500, 2500),
+                    data: [6500, 5900, 8000, 8100, 5600, 5500],
                     borderColor: '#ff38ac',
-                    borderWidth: 3,
-                    backgroundColor: 'rgba(122, 4, 235, 0.1)',
-                    fill: true,
+                    backgroundColor: 'rgba(122, 4, 235, 0.2)',
                     tension: 0.4,
-                    pointBackgroundColor: '#08f7fe',
-                    pointBorderColor: '#ffffff',
-                    pointHoverRadius: 8
+                    fill: true
                 }]
             },
             options: chartOptions
         });
 
-        // Gráfico de Ventas (Barras)
-        const salesCtx = document.getElementById('salesChart').getContext('2d');
-        new Chart(salesCtx, {
+        // Gráfico de Barras (Ventas)
+        new Chart(document.getElementById('salesChart'), {
             type: 'bar',
             data: {
-                labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                labels: ['Electrónicos', 'Ropa', 'Software', 'Libros'],
                 datasets: [{
                     label: 'Ventas',
-                    data: generateRandomData(12, 10000, 50000),
+                    data: [12000, 19000, 3000, 5000],
                     backgroundColor: 'rgba(8, 247, 254, 0.3)',
                     borderColor: '#7a04eb',
-                    borderWidth: 2,
-                    barPercentage: 0.6,
-                    borderRadius: 5
+                    borderWidth: 2
                 }]
             },
-            options: {
-                ...chartOptions,
-                scales: {
-                    ...chartOptions.scales,
-                    y: {
-                        ...chartOptions.scales.y,
-                        beginAtZero: true
-                    }
-                }
-            }
+            options: chartOptions
+        });
+
+        // Gráfico de Dona (Productos)
+        new Chart(document.getElementById('productsChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['En stock', 'Agotado', 'Reservado'],
+                datasets: [{
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        'rgba(122, 4, 235, 0.8)',
+                        'rgba(255, 56, 172, 0.8)',
+                        'rgba(8, 247, 254, 0.8)'
+                    ],
+                    borderColor: '#1a0933',
+                    borderWidth: 3
+                }]
+            },
+            options: chartOptions
+        });
+
+        // Gráfico de Radar (Actividad)
+        new Chart(document.getElementById('usersChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Registros', 'Compras', 'Comentarios', 'Descargas', 'Soporte'],
+                datasets: [{
+                    label: 'Actividad',
+                    data: [65, 59, 90, 81, 56],
+                    backgroundColor: 'rgba(255, 56, 172, 0.2)',
+                    borderColor: '#ff38ac',
+                    pointBackgroundColor: '#7a04eb'
+                }]
+            },
+            options: chartOptions
         });
     </script>
+
+    <style>
+        .synth-card {
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .synth-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 40px rgba(122, 4, 235, 0.3);
+        }
+
+        .chartjs-render-monitor {
+            filter: drop-shadow(0 0 10px rgba(122, 4, 235, 0.2));
+        }
+    </style>
 
 </body>
 </html>

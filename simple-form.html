@@ -15,7 +15,7 @@
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/metrics.css">
-    <link rel="stylesheet" href="css/tables.css">
+    <link rel="stylesheet" href="css/card.css">
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -115,7 +115,7 @@
                                 </li>
                             </ul>
                         </li>
-
+                        <!-- Pages -->
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-cubes" style="color: var(--synth-primary);"></i>
@@ -157,188 +157,69 @@
                                 </li>
                             </ul>
                         </li>
+                        <!-- Forms -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-file-alt" style="color: var(--synth-primary);"></i>
+                                <p>
+                                    Formularios
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="simple-form.html" class="nav-link">
+                                        <i class="fas fa-file-signature nav-icon" style="color: var(--synth-neon);"></i>
+                                        <p>Formulario Simple</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="post-form.html" class="nav-link">
+                                        <i class="fas fa-blog nav-icon" style="color: var(--synth-neon);"></i>
+                                        <p>Nuevo Post</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </aside>
-
-        <!-- Content Wrapper -->
+        <!-- Simple Form-->
         <div class="content-wrapper" style="background: linear-gradient(to bottom right, #16052f, #2c0a5a);">
-            <!-- Aquí irá el contenido principal -->
-            <!-- Tables -->
-            <div class="card synth-card">
-                <!-- ... (encabezado igual que antes) ... -->
-                
-                <div class="card-body" style="background: var(--synth-bg);">
-                    <table class="table table-synthwave">
-                        <thead>
-                            <tr>
-                                <th style="color: #fff;">ID</th>
-                                <th style="color: #fff;">Nombre</th>
-                                <th style="color: #fff;">Cargo</th>
-                                <th style="color: #fff;">Departamento</th>
-                                <th style="color: #fff;">Estatus</th>
-                                <th style="color: #fff;">Salario</th>
-                            </tr>
-                        </thead>
-                        <tbody id="employeesTableBody">
-                            <!-- Datos en HTML -->
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP001</td>
-                                <td style="color: white;">Neon Blade Anderson</td>
-                                <td style="color: #fff;">Desarrollador Senior</td>
-                                <td style="color: #fff;">Tecnología</td>
-                                <td><span class="status-badge active">Activo</span></td>
-                                <td style="color: var(--synth-neon);">$8,450.00</td>
-                            </tr>
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP002</td>
-                                <td style="color: white;">Cyber Pulse Smith</td>
-                                <td style="color: #fff;">Diseñador UI/UX</td>
-                                <td style="color: #fff;">Diseño</td>
-                                <td><span class="status-badge vacaciones">Vacaciones</span></td>
-                                <td style="color: var(--synth-neon);">$7,200.00</td>
-                            </tr>
-                            <!-- Agrega 10 filas más similares con datos inventados -->
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP003</td>
-                                <td style="color: white;">Synth Wave Johnson</td>
-                                <td style="color: #fff;">Gerente de Proyectos</td>
-                                <td style="color: #fff;">Administración</td>
-                                <td style="color: #fff;"><span class="status-badge inactivo">Inactivo</span></td>
-                                <td style="color: var(--synth-neon);">$9,800.00</td>
-                            </tr>
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP002</td>
-                                <td style="color: white;">Cyber Pulse Smith</td>
-                                <td style="color: #fff;">Ingeniero de Datos</td>
-                                <td style="color: #fff;">Tecnología</td>
-                                <td><span class="status-badge vacaciones">Vacaciones</span></td>
-                                <td style="color: var(--synth-neon);">$7,850.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP003</td>
-                                <td style="color: white;">Synth Wave Johnson</td>
-                                <td style="color: #fff;">Diseñador 3D</td>
-                                <td style="color: #fff;">Creativo</td>
-                                <td><span class="status-badge active">Activo</span></td>
-                                <td style="color: var(--synth-neon);">$6,950.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP004</td>
-                                <td style="color: white;">Laser Grid Williams</td>
-                                <td style="color: #fff;">Arquitecto Cloud</td>
-                                <td style="color: #fff;">Infraestructura</td>
-                                <td><span class="status-badge inactivo">Inactivo</span></td>
-                                <td style="color: var(--synth-neon);">$9,200.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP005</td>
-                                <td style="color: white;">Pixel Glitch Brown</td>
-                                <td style="color: #fff;">Especialista UI/UX</td>
-                                <td style="color: #fff;">Diseño</td>
-                                <td><span class="status-badge active">Activo</span></td>
-                                <td style="color: var(--synth-neon);">$8,100.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP006</td>
-                                <td style="color: white;">Neon Circuit Davis</td>
-                                <td style="color: #fff;">DevOps Engineer</td>
-                                <td style="color: #fff;">Operaciones</td>
-                                <td><span class="status-badge vacaciones">Vacaciones</span></td>
-                                <td style="color: var(--synth-neon);">$10,500.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP007</td>
-                                <td style="color: white;">Holo Matrix Miller</td>
-                                <td style="color: #fff;">Analista de Datos</td>
-                                <td style="color: #fff;">Inteligencia</td>
-                                <td><span class="status-badge active">Activo</span></td>
-                                <td style="color: var(--synth-neon);">$7,300.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP008</td>
-                                <td style="color: white;">Void Sphere Wilson</td>
-                                <td style="color: #fff;">Especialista SEO</td>
-                                <td style="color: #fff;">Marketing</td>
-                                <td><span class="status-badge inactivo">Inactivo</span></td>
-                                <td style="color: var(--synth-neon);">$5,900.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP009</td>
-                                <td style="color: white;">Retro Byte Moore</td>
-                                <td style="color: #fff;">Desarrollador Backend</td>
-                                <td style="color: #fff;">Tecnología</td>
-                                <td><span class="status-badge active">Activo</span></td>
-                                <td style="color: var(--synth-neon);">$8,750.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP010</td>
-                                <td style="color: white;">Neon Vector Taylor</td>
-                                <td style="color: #fff;">Diseñador Gráfico</td>
-                                <td style="color: #fff;">Creativo</td>
-                                <td><span class="status-badge vacaciones">Vacaciones</span></td>
-                                <td style="color: var(--synth-neon);">$6,400.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP011</td>
-                                <td style="color: white;">Cyber Core Anderson</td>
-                                <td style="color: #fff;">Gerente de Proyectos</td>
-                                <td style="color: #fff;">Administración</td>
-                                <td><span class="status-badge active">Activo</span></td>
-                                <td style="color: var(--synth-neon);">$11,000.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP012</td>
-                                <td style="color: white;">Synth Drive Thomas</td>
-                                <td style="color: #fff;">Soporte Técnico</td>
-                                <td style="color: #fff;">Soporte</td>
-                                <td><span class="status-badge inactivo">Inactivo</span></td>
-                                <td style="color: var(--synth-neon);">$4,800.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP013</td>
-                                <td style="color: white;">Laser Hologram White</td>
-                                <td style="color: #fff;">Especialista IA</td>
-                                <td style="color: #fff;">Innovación</td>
-                                <td><span class="status-badge active">Activo</span></td>
-                                <td style="color: var(--synth-neon);">$12,300.00</td>
-                            </tr>
-                            
-                            <tr class="employee-item">
-                                <td style="color: var(--synth-neon);">EMP014</td>
-                                <td style="color: white;">Neon Protocol Harris</td>
-                                <td style="color: #fff;">Arquitecto Software</td>
-                                <td style="color: #fff;">Tecnología</td>
-                                <td><span class="status-badge vacaciones">Vacaciones</span></td>
-                                <td style="color: var(--synth-neon);">$13,500.00</td>
-                            </tr>
-                            <!-- ... (agregar 9 filas más) ... -->
-                        </tbody>
-                    </table>
+            <section class="content pt-4">
+                <div class="container-fluid">
+                    <div class="card synth-card">
+                        <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
+                            <h3 class="card-title" style="color: var(--synth-neon);">
+                                <i class="fas fa-file-signature mr-2"></i>Formulario Simple
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="synth-form">
+                                <div class="form-group">
+                                    <label style="color: var(--synth-neon);">Nombre Completo</label>
+                                    <input type="text" class="form-control form-control-synth" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label style="color: var(--synth-neon);">Email</label>
+                                    <input type="email" class="form-control form-control-synth" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label style="color: var(--synth-neon);">Mensaje</label>
+                                    <textarea class="form-control form-control-synth" rows="5" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-synth-primary">
+                                    <i class="fas fa-paper-plane mr-2"></i>Enviar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Paginación -->
-                <div class="card-footer clearfix" style="border-top: 2px solid var(--synth-neon);">
-                    <ul class="pagination pagination-synthwave m-0 float-right">
-                        <li class="page-item"><a class="page-link" href="#" onclick="changePage(1)">«</a></li>
-                        <li class="page-item"><a class="page-link" href="#" onclick="changePage(1)">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#" onclick="changePage(2)">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#" onclick="changePage(2)">»</a></li>
-                    </ul>
-                </div>
-            </div>
+            </section>
         </div>
 
     </div>
@@ -369,7 +250,6 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
-    <script src="js/tables.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
@@ -489,7 +369,6 @@
             }
         });
     </script>
-
 
 </body>
 </html>

@@ -1,0 +1,45 @@
+    /* Estilos de paginación */
+    .pagination-synthwave .page-link {
+        background: rgba(122, 4, 235, 0.2) !important;
+        border: 1px solid var(--synth-neon);
+        color: var(--synth-neon) !important;
+        margin: 0 2px;
+        transition: all 0.3s ease;
+    }
+
+    .pagination-synthwave .page-item.active .page-link {
+        background: var(--synth-primary) !important;
+        border-color: var(--synth-primary);
+        color: white !important;
+        box-shadow: 0 0 10px var(--synth-primary);
+    }
+
+    .pagination-synthwave .page-link:hover {
+        background: rgba(255, 56, 172, 0.3) !important;
+        transform: scale(1.1);
+    }
+
+    /* Nuevos estatus */
+    .status-badge.vacaciones {
+        background: rgba(255, 193, 7, 0.2);
+        color: #ffc107;
+        border: 1px solid #ffc107;
+    }
+
+    .status-badge.inactivo {
+        background: rgba(255, 0, 0, 0.2);
+        color: #ff0000;
+        border: 1px solid #ff0000;
+    }
+
+    .form-control-synth {
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid var(--synth-border) !important;
+        color: white !important;
+        transition: all 0.3s ease;
+    }
+
+    .form-control-synth:focus {
+        box-shadow: 0 0 15px var(--synth-primary) !important;
+        border-color: var(--synth-neon) !important;
+    }

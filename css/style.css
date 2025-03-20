@@ -38,6 +38,26 @@ body {
     background: var(--synth-bg) !important;
 }
 
+/* Estilos específicos para el menú Pages */
+.nav-icon.fa-cubes {
+    color: var(--synth-secondary) !important;
+}
+
+.nav-treeview .nav-link {
+    padding-left: 40px !important;
+}
+
+.nav-treeview .nav-icon {
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+/* Efecto hover para submenú */
+.nav-treeview > .nav-item > .nav-link:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 10px rgba(8, 247, 254, 0.3);
+}
+
 /* Efecto de neón para el sidebar */
 .main-sidebar::before {
     content: '';
@@ -124,24 +144,115 @@ body {
     box-shadow: 0 0 50px rgba(255, 56, 172, 0.3);
 }
 
-.btn-synth-danger {
-    background: rgba(255, 0, 0, 0.3);
-    color: #ff0000;
-    border: 1px solid #ff0000;
+/* botones */
+
+/* Botones Base */
+.btn {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     transition: all 0.3s ease;
+    text-shadow: 0 0 5px currentColor;
 }
 
-.btn-synth-danger:hover {
-    background: rgba(255, 0, 0, 0.5);
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
-    transform: scale(1.05);
+/* Botones Principales */
+.btn-synth-primary {
+    background: rgba(8, 247, 254, 0.3); /* Cyan Neon */
+    border-color: #08f7fe;
+    color: #08f7fe;
 }
 
 .btn-synth-secondary {
-    background: rgba(8, 247, 254, 0.1);
-    color: var(--synth-neon);
-    border: 1px solid var(--synth-neon);
+    background: rgba(122, 4, 235, 0.3); /* Purple Synth */
+    border-color: #7a04eb;
+    color: #7a04eb;
 }
+
+.btn-synth-success {
+    background: rgba(0, 255, 163, 0.3); /* Green Neon */
+    border-color: #00ffa3;
+    color: #00ffa3;
+}
+
+.btn-synth-danger {
+    background: rgba(255, 0, 92, 0.3); /* Pink Neon */
+    border-color: #ff005c;
+    color: #ff005c;
+}
+
+.btn-synth-warning {
+    background: rgba(255, 193, 7, 0.3); /* Yellow Neon */
+    border-color: #ffc107;
+    color: #ffc107;
+}
+
+.btn-synth-info {
+    background: rgba(23, 240, 255, 0.3); /* Blue Neon */
+    border-color: #17f0ff;
+    color: #17f0ff;
+}
+
+.btn-synth-dark {
+    background: rgba(26, 9, 51, 0.3); /* Fondo Oscuro */
+    border-color: #1a0933;
+    color: #7a04eb;
+}
+
+.btn-synth-light {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/* Efectos Hover */
+.btn-synth-primary:hover,
+.btn-synth-secondary:hover,
+.btn-synth-success:hover,
+.btn-synth-danger:hover,
+.btn-synth-warning:hover,
+.btn-synth-info:hover,
+.btn-synth-dark:hover,
+.btn-synth-light:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px currentColor;
+    filter: brightness(1.2);
+}
+
+/* Outline Variants */
+.btn-outline-synth {
+    background: transparent !important;
+    border-width: 2px;
+}
+
+/* Tamaños */
+.btn-synth-lg {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+}
+
+.btn-synth-sm {
+    padding: 5px 15px;
+    font-size: 0.8rem;
+}
+
+/* Estados Especiales */
+.btn:disabled {
+    opacity: 0.5;
+    filter: grayscale(0.8);
+}
+
+.btn-synth-active {
+    box-shadow: 0 0 15px currentColor inset;
+}
+
+/* Focus Personalizado */
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--synth-neon-rgb), 0.5);
+}
+
 
 /* Charts style */
 

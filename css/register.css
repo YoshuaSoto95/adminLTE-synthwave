@@ -1,0 +1,171 @@
+:root {
+    --synth-primary: #ff38ac;
+    --synth-secondary: #7a04eb;
+    --synth-bg: #1a0933;
+    --synth-neon: #08f7fe;
+    --synth-border: #ff75c3;
+}
+
+body {
+    background: linear-gradient(45deg, #16052f, #2c0a5a);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos adicionales para registro */
+.register-box {
+    width: 700px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.password-strength {
+    margin-top: 10px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s ease;
+    background: linear-gradient(90deg, var(--synth-primary), var(--synth-secondary));
+}
+
+.terms-link {
+    color: var(--synth-neon);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.terms-link:hover {
+    text-shadow: 0 0 15px var(--synth-neon);
+}
+
+.login-box {
+    width: 600px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.login-card {
+    background: rgba(26, 9, 51, 0.9);
+    border: 2px solid var(--synth-neon);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(122, 4, 235, 0.3);
+    position: relative;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--synth-primary), var(--synth-secondary), var(--synth-neon));
+    z-index: -1;
+    border-radius: 15px;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-logo span {
+    font-size: 2.5em;
+    color: var(--synth-neon);
+    text-shadow: 0 0 15px var(--synth-neon);
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 3px;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid var(--synth-border) !important;
+    color: white !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 15px var(--synth-primary) !important;
+    border-color: var(--synth-neon) !important;
+}
+
+.social-auth-links .btn {
+    color: white;
+    border: 1px solid;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-google {
+    background: rgba(219, 50, 54, 0.2);
+    border-color: #db3236 !important;
+}
+
+.btn-outlook {
+    background: rgba(0, 114, 198, 0.2);
+    border-color: #0072c6 !important;
+}
+
+.btn-facebook {
+    background: rgba(59, 89, 152, 0.2);
+    border-color: #3b5998 !important;
+}
+
+.social-auth-links .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px currentColor;
+}
+
+.login-btn {
+    background: linear-gradient(45deg, var(--synth-primary), var(--synth-secondary));
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--synth-primary);
+}
+
+/* Efecto de líneas diagonales de fondo */
+.diagonal-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 25px,
+        rgba(255, 56, 172, 0.1) 25px,
+        rgba(255, 56, 172, 0.1) 50px
+    );
+    pointer-events: none;
+}

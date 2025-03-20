@@ -1,0 +1,44 @@
+/* Estilos adicionales */
+.btn-synth-edit {
+    background: rgba(8, 247, 254, 0.2);
+    color: var(--synth-neon);
+    border: 1px solid var(--synth-neon);
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-synth-delete {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    transition: all 0.3s ease;
+}
+
+.btn-synth-edit:hover, .btn-synth-delete:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px currentColor;
+}
+
+.role-badge {
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+.role-badge.admin {
+    background: rgba(122, 4, 235, 0.2);
+    color: var(--synth-secondary);
+    border: 1px solid var(--synth-secondary);
+}
+
+.role-badge.user {
+    background: rgba(8, 247, 254, 0.2);
+    color: var(--synth-neon);
+    border: 1px solid var(--synth-neon);
+}
+
+.role-badge.guest {
+    background: rgba(255, 56, 172, 0.2);
+    color: var(--synth-primary);
+    border: 1px solid var(--synth-primary);
+}
