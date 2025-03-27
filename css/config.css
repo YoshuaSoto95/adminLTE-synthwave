@@ -1,0 +1,121 @@
+  /* Estilos específicos para configuración */
+  .settings-card {
+    background: rgba(26, 9, 51, 0.7);
+    border: 2px solid var(--synth-neon);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.settings-card:hover {
+    box-shadow: 0 0 30px rgba(122, 4, 235, 0.3);
+    transform: translateY(-3px);
+}
+
+.settings-card-header {
+    border-bottom: 2px solid var(--synth-neon);
+    padding: 15px 20px;
+}
+
+.settings-card-title {
+    color: var(--synth-neon);
+    font-size: 1.2rem;
+}
+
+.settings-card-body {
+    padding: 20px;
+}
+
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(122, 4, 235, 0.3);
+}
+
+.settings-item:last-child {
+    border-bottom: none;
+}
+
+.settings-label {
+    color: white;
+    font-weight: 500;
+}
+
+.settings-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.synth-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.synth-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.synth-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: .4s;
+    border-radius: 34px;
+    border: 1px solid var(--synth-neon);
+}
+
+.synth-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .synth-slider {
+    background-color: var(--synth-primary);
+}
+
+input:checked + .synth-slider:before {
+    transform: translateX(26px);
+    background-color: var(--synth-neon);
+}
+
+.theme-selector {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.theme-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.theme-option:hover {
+    transform: scale(1.1);
+}
+
+.theme-option.active {
+    border: 2px solid var(--synth-neon);
+    box-shadow: 0 0 15px var(--synth-neon);
+}

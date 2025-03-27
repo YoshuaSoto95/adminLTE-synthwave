@@ -52,7 +52,7 @@
                         <a href="profile.html" class="dropdown-item">
                             <i class="fas fa-user mr-2" style="color: var(--synth-primary);"></i> Perfil
                         </a>
-                        <a href="#" class="dropdown-item">
+                        <a href="config.html" class="dropdown-item">
                             <i class="fas fa-cog mr-2" style="color: var(--synth-neon);"></i> Configuración
                         </a>
                         <div class="dropdown-divider" style="border-color: var(--synth-border);"></div>
@@ -190,7 +190,7 @@
 
   <!-- Content Wrapper -->
   <div class="content-wrapper" style="background: linear-gradient(to bottom right, #16052f, #2c0a5a);">
-    <section class="content">
+    <section class="content pt-4">
         <div class="container-fluid">
             <div class="card synth-card">
                 <div class="card-header" style="border-bottom: 2px solid var(--synth-neon);">
@@ -200,67 +200,69 @@
                 </div>
                 
                 <div class="card-body" style="background: var(--synth-bg);">
-                    <table class="table table-synthwave">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Username</th>
-                                <th>Email</th>
-                                <th>Rol</th>
-                                <th>Estatus</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Ejemplo de fila -->
-                            <tr>
-                                <td style="color: var(--synth-neon);">#001</td>
-                                <td style="color: #fff;">CyberAdmin</td>
-                                <td style="color: #fff;">admin@synthwave.com</td>
-                                <td><span class="role-badge admin">Administrador</span></td>
-                                <td><span class="status-badge active">Active</span></td>
-                                <td>
-                                    <button class="btn btn-synth-edit" data-toggle="modal" data-target="#editModal" data-user-id="001" data-username="CyberAdmin" data-email="admin@synthwave.com">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-synth-delete" data-toggle="modal" data-target="#deleteModal" data-user-id="001" data-username="CyberAdmin">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="color: var(--synth-neon);">#002</td>
-                                <td style="color: #fff;">EditorBloger</td>
-                                <td style="color: #fff;">editor@synthwave.com</td>
-                                <td><span class="role-badge admin">Basic</span></td>
-                                <td><span class="status-badge active">Active</span></td>
-                                <td>
-                                    <button class="btn btn-synth-edit" data-toggle="modal" data-target="#editModal" data-user-id="001" data-username="CyberAdmin" data-email="admin@synthwave.com">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-synth-delete" data-toggle="modal" data-target="#deleteModal" data-user-id="001" data-username="CyberAdmin">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="color: var(--synth-neon);">#003</td>
-                                <td style="color: #fff;">Support</td>
-                                <td style="color: #fff;">support@synthwave.com</td>
-                                <td><span class="role-badge admin">Basic</span></td>
-                                <td><span class="status-badge inactivo">Disable</span></td>
-                                <td>
-                                    <button class="btn btn-synth-edit" data-toggle="modal" data-target="#editModal" data-user-id="001" data-username="CyberAdmin" data-email="admin@synthwave.com">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button class="btn btn-synth-delete" data-toggle="modal" data-target="#deleteModal" data-user-id="001" data-username="CyberAdmin">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- Agrega más filas según necesites -->
-                        </tbody>
-                    </table>
+                    <div class="table-resposive">
+                        <table class="table table-synthwave">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Rol</th>
+                                    <th>Estatus</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Ejemplo de fila -->
+                                <tr>
+                                    <td style="color: var(--synth-neon);">#001</td>
+                                    <td style="color: #fff;">CyberAdmin</td>
+                                    <td style="color: #fff;">admin@synthwave.com</td>
+                                    <td><span class="role-badge admin">Administrador</span></td>
+                                    <td><span class="status-badge active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-synth-edit" data-toggle="modal" data-target="#editModal" data-user-id="001" data-username="CyberAdmin" data-email="admin@synthwave.com">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-synth-delete" data-toggle="modal" data-target="#deleteModal" data-user-id="001" data-username="CyberAdmin">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: var(--synth-neon);">#002</td>
+                                    <td style="color: #fff;">EditorBloger</td>
+                                    <td style="color: #fff;">editor@synthwave.com</td>
+                                    <td><span class="role-badge basic">Basic</span></td>
+                                    <td><span class="status-badge active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-synth-edit" data-toggle="modal" data-target="#editModal" data-user-id="001" data-username="CyberAdmin" data-email="admin@synthwave.com">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-synth-delete" data-toggle="modal" data-target="#deleteModal" data-user-id="001" data-username="CyberAdmin">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: var(--synth-neon);">#003</td>
+                                    <td style="color: #fff;">Support</td>
+                                    <td style="color: #fff;">support@synthwave.com</td>
+                                    <td><span class="role-badge basic">Basic</span></td>
+                                    <td><span class="status-badge inactivo">Disable</span></td>
+                                    <td>
+                                        <button class="btn btn-synth-edit" data-toggle="modal" data-target="#editModal" data-user-id="001" data-username="CyberAdmin" data-email="admin@synthwave.com">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-synth-delete" data-toggle="modal" data-target="#deleteModal" data-user-id="001" data-username="CyberAdmin">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- Agrega más filas según necesites -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -379,101 +381,6 @@
                 console.log('Usuario desconectado');
                 $('#logoutModal').modal('hide');
             });
-        });
-    </script>
-    <script>
-        // Función para generar datos aleatorios
-        function generateRandomData(length, min, max) {
-            return Array.from({length}, () => Math.floor(Math.random() * (max - min + 1)) + min);
-        }
-
-        // Configuración común para gráficos
-        const chartOptions = {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    display: false
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(26, 9, 51, 0.9)',
-                    titleColor: '#08f7fe',
-                    bodyColor: '#ff38ac',
-                    borderColor: '#7a04eb',
-                    borderWidth: 1,
-                    callbacks: {
-                        label: (context) => ` ${context.dataset.label}: ${context.parsed.y}`
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    grid: {
-                        color: 'rgba(122, 4, 235, 0.2)'
-                    },
-                    ticks: {
-                        color: '#ff75c3'
-                    }
-                },
-                y: {
-                    grid: {
-                        color: 'rgba(122, 4, 235, 0.2)'
-                    },
-                    ticks: {
-                        color: '#ff75c3'
-                    }
-                }
-            }
-        };
-
-        // Gráfico de Visitas (Línea)
-        const visitsCtx = document.getElementById('visitsChart').getContext('2d');
-        new Chart(visitsCtx, {
-            type: 'line',
-            data: {
-                labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4', 'Sem 5', 'Sem 6', 'Sem 7', 'Sem 8', 'Sem 9', 'Sem 10', 'Sem 11', 'Sem 12'],
-                datasets: [{
-                    label: 'Visitas',
-                    data: generateRandomData(12, 500, 2500),
-                    borderColor: '#ff38ac',
-                    borderWidth: 3,
-                    backgroundColor: 'rgba(122, 4, 235, 0.1)',
-                    fill: true,
-                    tension: 0.4,
-                    pointBackgroundColor: '#08f7fe',
-                    pointBorderColor: '#ffffff',
-                    pointHoverRadius: 8
-                }]
-            },
-            options: chartOptions
-        });
-
-        // Gráfico de Ventas (Barras)
-        const salesCtx = document.getElementById('salesChart').getContext('2d');
-        new Chart(salesCtx, {
-            type: 'bar',
-            data: {
-                labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-                datasets: [{
-                    label: 'Ventas',
-                    data: generateRandomData(12, 10000, 50000),
-                    backgroundColor: 'rgba(8, 247, 254, 0.3)',
-                    borderColor: '#7a04eb',
-                    borderWidth: 2,
-                    barPercentage: 0.6,
-                    borderRadius: 5
-                }]
-            },
-            options: {
-                ...chartOptions,
-                scales: {
-                    ...chartOptions.scales,
-                    y: {
-                        ...chartOptions.scales.y,
-                        beginAtZero: true
-                    }
-                }
-            }
         });
     </script>
 

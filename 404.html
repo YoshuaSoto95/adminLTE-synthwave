@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synthwave Admin</title>
+    <title>Error 404 | Synthwave Admin</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/login.css">
     
     <style>
         :root {
@@ -146,49 +145,25 @@
     <div class="grid-pattern"></div>
     <div class="floating-icons" id="floatingIcons"></div>
     
-    <div class="login-box">
-        <div class="login-card">
-            <div class="login-logo">
-                <span>SYNTHWAVE</span>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-title">404</div>
+            <div class="error-subtitle">
+                <i class="fas fa-exclamation-triangle"></i> Página no encontrada
             </div>
-
-            <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" style="color: white;">
-                </div>
-
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Contraseña" style="color: white;">
-                </div>
-
-                <button type="submit" class="btn btn-block login-btn">
-                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-                </button>
-
-                <div class="social-auth-links text-center mt-4">
-                    <p style="color: var(--synth-neon);">O continúa con</p>
-                    
-                    <a href="#" class="btn btn-block btn-google">
-                        <i class="fab fa-google" style="color: #db3236;"></i> Gmail
-                    </a>
-                    
-                    <a href="#" class="btn btn-block btn-outlook">
-                        <i class="fab fa-microsoft" style="color: #0072c6;"></i> Outlook
-                    </a>
-                    
-                    <a href="#" class="btn btn-block btn-facebook">
-                        <i class="fab fa-facebook" style="color: #3b5998;"></i> Facebook
-                    </a>
-                </div>
-
-                <p class="mt-3 text-center" style="color: white;">
-                    ¿No tienes cuenta? 
-                    <a href="register.html" class="terms-link">Registrarte</a>
-                </p>
-            </form>
+            <div class="error-message">
+                La página que estás buscando podría haber sido eliminada, haber cambiado de nombre o no está disponible temporalmente.
+            </div>
+            <div>
+                <a href="index.html" class="error-btn">
+                    <i class="fas fa-home mr-2"></i> Volver al Inicio
+                </a>
+                <a href="javascript:history.back()" class="error-btn error-btn-outline">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver Atrás
+                </a>
+            </div>
         </div>
     </div>
-
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

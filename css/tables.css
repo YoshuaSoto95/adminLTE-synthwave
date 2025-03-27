@@ -43,3 +43,48 @@
         box-shadow: 0 0 15px var(--synth-primary) !important;
         border-color: var(--synth-neon) !important;
     }
+
+
+    /* Estilos responsive para la tabla */
+    @media (max-width: 992px) {
+        .table-synthwave {
+            border: 0;
+        }
+        
+        .table-synthwave thead {
+            display: none;
+        }
+        
+        .table-synthwave tr {
+            display: block;
+            margin-bottom: 20px;
+            border: 2px solid var(--synth-neon);
+            border-radius: 8px;
+            background: rgba(26, 9, 51, 0.7);
+        }
+        
+        .table-synthwave td {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(122, 4, 235, 0.3);
+            text-align: right;
+        }
+        
+        .table-synthwave td:before {
+            content: attr(data-label);
+            font-weight: bold;
+            color: var(--synth-primary);
+            margin-right: 15px;
+        }
+        
+        .table-synthwave td:last-child {
+            border-bottom: 0;
+        }
+        
+        .table-synthwave .btn {
+            margin: 2px;
+        }
+    }
+

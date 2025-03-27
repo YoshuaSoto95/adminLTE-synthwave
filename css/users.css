@@ -31,7 +31,7 @@
     border: 1px solid var(--synth-secondary);
 }
 
-.role-badge.user {
+.role-badge.basic {
     background: rgba(8, 247, 254, 0.2);
     color: var(--synth-neon);
     border: 1px solid var(--synth-neon);

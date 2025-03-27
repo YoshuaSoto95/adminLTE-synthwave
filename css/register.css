@@ -73,6 +73,7 @@ body {
     left: -2px;
     right: -2px;
     bottom: -2px;
+    opacity: calc(0.3) !important;
     background: linear-gradient(45deg, var(--synth-primary), var(--synth-secondary), var(--synth-neon));
     z-index: -1;
     border-radius: 15px;
