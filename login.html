@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synthwave Admin</title>
+    <title>Register | Synthwave Admin</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
@@ -136,9 +136,38 @@
             animation: float 15s infinite linear;
         }
 
+        .login-logo h3 {
+            display: none;
+        }
+
         @keyframes float {
             0% { transform: translateY(0) rotate(0deg); }
             100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        @media(max-width: 768px) {
+            body {
+                width: 100%;
+            }
+            .login-box{
+                width: 90%;
+                margin: 0 10px;
+            }
+        }
+
+        @media(max-width: 655px) {
+            .login-logo span{
+                display: none;
+            }
+
+            .login-logo h3{
+                display: flex;
+                flex-direction: column;
+                font-size: 2.5rem;
+                text-align: center;
+                color: var(--synth-neon);
+                text-shadow: #08f7fe 0 0 10px;
+            }
         }
     </style>
 </head>
@@ -150,6 +179,7 @@
         <div class="login-card">
             <div class="login-logo">
                 <span>SYNTHWAVE</span>
+                <h3>SYNTHWAVE</h3>
             </div>
 
             <form>
