@@ -36,9 +36,8 @@ Personalización y depuración manual.
 
 Clona este repositorio:
 
-git clone https://github.com/tuusuario/synthwave-admin.git
+git clone [https://github.com/tuusuario/synthwave-admin.git](https://github.com/YoshuaSoto95/adminLTE-synthwave.git)
 cd synthwave-admin
-
 
 Abre el archivo index.html en tu navegador o sirve el proyecto con cualquier servidor local:
 
