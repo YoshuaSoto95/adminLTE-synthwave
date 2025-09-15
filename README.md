@@ -1,5 +1,9 @@
 🎛 Synthwave Admin – Plantilla Dashboard
 
+📷 Capturas
+
+(banner.png)
+
 📌 Descripción
 
 Synthwave Admin es una plantilla de dashboard con estilo retro-futurista inspirada en el synthwave, construida sobre el motor de AdminLTE.
@@ -41,10 +45,6 @@ cd synthwave-admin
 Abre el archivo index.html en tu navegador o sirve el proyecto con cualquier servidor local:
 
 npx serve
-
-📷 Capturas
-
-()
 
 📜 Créditos
 
